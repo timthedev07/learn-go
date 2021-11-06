@@ -2,13 +2,12 @@ package main
 
 import (
 	"bufio"
-	"errors"
 	"fmt"
 	"os"
 )
 
 // A function that gets the user input from the command line.
-func input(str string) (string, error) {
+func input(str string) string {
 	// get input
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Print(str)
@@ -16,8 +15,9 @@ func input(str string) (string, error) {
 	// if condition
 	if scanner.Scan() {
 		inputStr := scanner.Text()
-		return inputStr, nil
+		return inputStr
 	}
 	// error handling
-	return "", errors.New("failed to scan")
+	fmt.Println("Failed to get input.")
+	return ""
 }

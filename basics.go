@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"math"
 )
 
@@ -24,10 +23,6 @@ func main() {
 	fmt.Printf("\n\n")
 
 	// getting input
-	res, err := input("Type something: ")
-	if err != nil { // error handling
-		log.Fatal(err)
-	} else {
-		fmt.Printf("You typed:      %s\n", res)
-	}
+	res := input("Type something: ")
+	fmt.Printf("You typed:      %s\n", res)
 }
