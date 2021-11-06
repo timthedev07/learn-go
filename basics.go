@@ -22,7 +22,6 @@ func main() {
 	fmt.Println(someOtherStr)
 	fmt.Printf("\n\n")
 
-	// getting input
-	res := input("Type something: ")
-	fmt.Printf("You typed:      %s\n", res)
+	// play the number guessing game
+	playGuessNumberGames()
 }
