@@ -19,5 +19,5 @@ func input(str string) (string, error) {
 		return inputStr, nil
 	}
 	// error handling
-	return "", errors.New("Failed to scan.")
+	return "", errors.New("failed to scan")
 }
