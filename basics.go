@@ -23,5 +23,6 @@ func main() {
 	fmt.Printf("\n\n")
 
 	// play the number guessing game
-	playGuessNumberGames()
+	// playGuessNumberGames()
+	doArrayStuff()
 }
