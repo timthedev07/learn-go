@@ -10,7 +10,7 @@ import (
 
 func playGuessNumberGame() {
 	min := 1
-	max := 20
+	max := 64
 
 	rand.Seed(time.Now().UnixNano())
 	randNumber := uint64(rand.Intn(max-min+1) + min)
