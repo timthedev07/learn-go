@@ -7,6 +7,9 @@ import (
 
 // 															 labeling return values
 func findDuplicates(data []int) (duplicate []int) {
+	// the deferred statement would be executed at the end of the function
+	// useful for cleaning up stuff when the execution finishes
+	defer fmt.Println("Finish finding duplicates...")
 	seen := make(map[int]uint8)
 	duplicate = []int{}
 	for _, item := range data {
