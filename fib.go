@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/big"
+	"time"
 )
 
 func iterativeFib(n int) *big.Int {
@@ -34,12 +35,21 @@ func recursiveFib(n int, memo *(map[int]*big.Int)) *big.Int {
 }
 
 func doStuffWithFib() {
-	fmt.Println(iterativeFib(150))
+	n := 300000
+	start := time.Now()
+	iterativeFib(n)
+	iterDuration := time.Since(start)
+
 	memo := make(map[int]*big.Int)
-	fmt.Println(recursiveFib(150, &memo))
+	start = time.Now()
+	recursiveFib(n, &memo)
+	recurDuration := time.Since(start)
+
+	fmt.Printf("The iterative approach took %d ms.\n", iterDuration.Milliseconds())
+	fmt.Printf("The recursive approach took %d ms.\n", recurDuration.Milliseconds())
 
 	// lambda function
 	fmt.Println(func() string {
-		return "Hello from lambda."
+		return "Hello from closure."
 	}())
 }
