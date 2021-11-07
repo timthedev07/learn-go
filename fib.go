@@ -37,4 +37,9 @@ func doStuffWithFib() {
 	fmt.Println(iterativeFib(150))
 	memo := make(map[int]*big.Int)
 	fmt.Println(recursiveFib(150, &memo))
+
+	// lambda function
+	fmt.Println(func() string {
+		return "Hello from lambda."
+	}())
 }
