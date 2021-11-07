@@ -45,8 +45,10 @@ func doStuffWithFib() {
 	recursiveFib(n, &memo)
 	recurDuration := time.Since(start)
 
+	fmt.Println("\n==============================")
 	fmt.Printf("The iterative approach took %d ms.\n", iterDuration.Milliseconds())
 	fmt.Printf("The recursive approach took %d ms.\n", recurDuration.Milliseconds())
+	fmt.Println("==============================")
 
 	// lambda function
 	fmt.Println(func() string {
