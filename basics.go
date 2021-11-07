@@ -30,4 +30,6 @@ func main() {
 	doMapStuff()
 
 	doStuffWithFib()
+
+	closureStuff()
 }
