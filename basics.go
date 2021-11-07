@@ -26,4 +26,6 @@ func main() {
 	// playGuessNumberGames()
 	doArrayStuff()
 	doDecentStuffWithArray()
+
+	doMapStuff()
 }
