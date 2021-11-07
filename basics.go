@@ -25,4 +25,5 @@ func main() {
 	// play the number guessing game
 	// playGuessNumberGames()
 	doArrayStuff()
+	doDecentStuffWithArray()
 }
