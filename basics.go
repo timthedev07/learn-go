@@ -28,4 +28,6 @@ func main() {
 	doDecentStuffWithArray()
 
 	doMapStuff()
+
+	doStuffWithFib()
 }
