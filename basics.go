@@ -29,7 +29,8 @@ func main() {
 
 	doMapStuff()
 
-	doStuffWithFib()
+	// doStuffWithFib()
 
 	closureStuff()
+	doStuffWithPerson()
 }
